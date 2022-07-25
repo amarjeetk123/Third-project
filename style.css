@@ -1,9 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0px;
     padding: 0px;
     text-decoration: none;
     list-style: none;
+    font-family:Montserrat ;
 }
 /* body{
     background: url(./assets/ima.jpg)  ;
@@ -12,68 +13,76 @@
      height: 100vh;
 } */
 .main-container{
-   height: 360px;
-    width: 100%;
+    height: 46vh;
+    width: 100vw;
     background: linear-gradient(rgb(91, 80, 69)50%,rgb(91, 80, 69)50%);
     /* background-color:#664228; */
     /* transform: rotate(180deg);  */
 }
 .nav{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding-top: 30px;
     height: 10vh;
 }
 .logo{
     margin-left: 80px;
-    margin-top: -10px;
+    flex: 1;
 }
-.abc{
-    height: 50px;
-    margin-right: 100px;
-   
-    display: flex;
-}
+
 .list{
   display: flex;
+  flex-direction: row;
+  flex: 2;
+  justify-content: space-around;
+  margin-right: 300px;
 }
 .list li{
-    font-size: 20px;
-    margin-left: 20px;
-    padding-top: 10px;
-    color: #fff;
+    font-size: 21px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: 15px;
+    padding: 10px 10px;
 }
-.abc h1{
- 
-    margin-left: 50px;
-    width: 150px;
-    border: 2px solid #000000;
-    border-radius:20px ;
-    font-size: 25px;
-    color: #fff;
-    font-weight: normal;
-    padding-left: 25px;
-    padding-top: 7px;
-    transition: 0.5s;
-}
-.abc h1:hover{
+.list li:hover{
     border: 2px solid #ffff;
     background-color: #000000;
 }
+.btn{
+    background-color: transparent;
+    color: #ffff;
+    font-size: 19px;
+    height: 50px;
+    width: 160px;
+   margin-right: -200px;
+   margin-top: 15px;
+   border: 2px solid #000000;
+   border-radius: 20px;
+   cursor: pointer;
+   font-weight: 600;
+}
+.btn:hover{
+    color: #000000;
+    border: 2px solid #ffff;
+    
+
+}
 .middle{
     display: flex;
-    margin-top: 30px;
+    margin-top: 20px;
     color: #ffffff;
 }
 .middle h1{
+    margin-top: 10px;
     margin-left: 80px;
-    width: 600px ;
-   font-size: 80px;
+    width: 700px ;
+   font-size: 71px;
    
 }
 .middle h2{
     width: 400px;
-    margin-left: 300px;
+    margin-left: 250px;
     margin-top: 40px;
    font-weight: normal;
 }

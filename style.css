@@ -7,41 +7,49 @@
     font-family:Montserrat ;
     box-sizing: border-box;
 }
+body{
+    background: linear-gradient(rgb(56, 56, 55)50%,rgb(56, 56, 55)50%);
+}
 
 .main-container{
    
     height: auto;
     width: 100%;
-    background: linear-gradient(rgb(91, 80, 69)50%,rgb(91, 80, 69)50%);
+    background: linear-gradient(rgb(56, 56, 55)50%,rgb(56, 56, 55)50%);
    
 }
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(rgb(56, 56, 55)50%,rgb(56, 56, 55)50%);
+}
 .nav{
-    /* background-color: black; */
+    width: 90%;
+    margin: 0px auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-   padding: 40px 0px;
-   flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+   padding: 20px 0px;
+ 
 }
-
 .list{
   display: flex;
-  flex-direction: row;
  
-  justify-content: space-around;
-  margin-right: 300px;
 }
 .list li{
     font-size: 25px;
     font-weight: 500;
     color: #ffffff;
-    margin: 0px 15px;
+   margin: 0px 10px;
     padding: 10px 20px;
 }
 .list li:hover{
     border: 2px solid #ffff;
-    background-color: #000000;
+    background: rgb(65, 65, 65);
     border-radius: 15px;
+    transition: 0.4s;
 }
 .btn{
     background-color: transparent;
@@ -54,68 +62,56 @@
    cursor: pointer;
    font-weight: 600;
    transition: 0.5s;
-    margin-right: 100px;
+ 
 }
 .btn:hover{
     color: #000000;
     border: 3px solid #ffff;
     transform: translatey(-10px);
 }
+
+
 .middle{
-    width: 100%;
+    width: 90%;
+    margin: 120px auto 0px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
-    flex-wrap: wrap;
-   margin-top: 50px;
+    padding-bottom: 20px;
+   
+ 
     color: #ffffff;
 }
 .middle h1{
    font-size: 71px;
-   width: 700px;
+   width: 50%;
+   
 }
 .middle h2{
     font-size: 40px;
    font-weight: normal;
-   width: 700px;
-   padding-bottom: 30px;
+   width: 50%;
+   
 }
-
-
 .lower{
     width: 100%;
     height: auto;
     height: 54vh;
 }
 
-@media screen and (max-width:1300px) and (min-width:840px) {
-     .nav{
-        background-color: red;
-    } 
-    .nav{
-        display: flex;
-        justify-content: flex-start;
-    }
-    .list{
-        margin-left: 200px;
-        margin-top: -50px;
-    }
-    .list a li{
-        font-size: 20px;
-    }
-  
-    .btn{
-      margin-left: 400px;
-      margin-top: 30px
-      
-    }
-    .middle h2{
-        margin: 30px 0px;
-        font-size: 30px;
-    }
-    .logo{
-        margin-left: 30px;
-    }
+@media screen and (max-width:1100px)  {
+   .nav{
+ flex-direction: column;
+   }
+  .middle{
+    flex-direction: column;
+    margin: 220px 0px 5px;
+  }
+  .middle h1 , .middle h2{
+    width: 90%;
+    margin: 0px auto;
+  }
+   
 }
 
 @media screen and (max-width:900px) {
@@ -123,62 +119,72 @@
         background-color: red;
     } */
     .middle{
+       
         flex-direction: column;
         align-items: center;
     }
 }   
-   
-@media screen and (max-width:1550px) {
-   
-   .btn{
-    margin-top: 20px;
-   }
-   
-}   
+  
+
+.three-line{
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    display: none;
+}
+  
 @media screen and (max-width:840px){
-    /* .nav{
-        background-color: red;
-    } */
+    .middle{
+        margin: 120px auto 50px;
+    }
     .nav{
-        flex-direction: column;
+        align-items: flex-start;
     }
-    .logo{
-        margin-left: 50px;
-    }
-    .list{
-       margin-top: 50px;
-        flex-direction: column;
-        margin-left: 30px;
-        
-    }
-    .btn{
-        position: absolute;
-        margin-left: 350px;
-       margin-top: -420px;
-    }
-    .list li{
-        width: 50%;
-        text-align: center;
-        margin: 10px 0px;
-    }
-    .middle {
-        margin-top: -40px;
-       
-    }
-   .middle h1 , .middle h2{
-    width: 80%;
+   .btn{
+    position: absolute;
+    top: 20%;
+    right: 15%;
    }
+   .three-line{
+    display: inline;
+   }
+   .list{ 
+    position: fixed;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+    height: 0%;
+    left: 0;
+    background: linear-gradient(rgb(21, 21, 20)50%,rgb(21, 21, 20)50%);
+  
+    
+   }
+   .list a{
+    width: 240px;
+    text-align: center;
+    display: none;
+   }
+   .list li{
+    font-size: 30px;
+   }
+   #check:checked ~ .list{
+    top: 10%;
+    transition: 0.5s;
+    height: 50%;
+    
+   }
+   #check:checked ~ .list a{
+   
+    transition: 0.5s;
+   display: inline;
+   transition-delay: 0s;
+    
+   }
+
+
 }
 
-@media screen and (max-width:1420px){
-    .nav{
-        background-color: aqua;
-    }
-    .middle h2{
-        margin-top: 20px;
 
-    }
-}
 
 
 

@@ -20,7 +20,7 @@
  ![](./assets/web-page.jpg)
 
  ## What I have learned in this project .
- - In this project i have learned about image adjustment on web page and how I move my image on web page .
+ - In this project i have learned alout about image adjustment on web page and how I move my image on web page .
 -  In this project I learned about hover effects.
 
 ### It took 4 hours to competed
